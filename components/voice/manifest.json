@@ -2,7 +2,7 @@
   "name": "voice",
   "version": "1.0.0",
   "title": "语音交互",
-  "description": "本地语音输入(STT)和语音输出(TTS)，基于 sherpa-onnx 离线引擎。约 280MB 首次下载",
+  "description": "本地语音输入(STT)和语音输出(TTS)，基于 sherpa-onnx 离线引擎，通过 pip 自动安装依赖",
   "icon": "mic",
   "category": "interaction",
   "skill_type": "code",
