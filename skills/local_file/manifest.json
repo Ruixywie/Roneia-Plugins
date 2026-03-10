@@ -1,0 +1,89 @@
+{
+  "name": "local_file",
+  "version": "1.0.0",
+  "title": "文件操作",
+  "description": "管理本地文件和文件夹，支持打开、读取、搜索文件",
+  "icon": "file",
+  "category": "core",
+  "skill_type": "code",
+  "execution_location": "local",
+  "dependencies": [],
+  "import_map": {},
+  "permissions": ["file.read", "file.open"],
+  "tools": [
+    {
+      "name": "open_file",
+      "description": "使用系统默认程序打开文件或文件夹",
+      "permission": "file.open",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "文件或文件夹的路径",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "read_file",
+      "description": "读取文件内容（仅支持文本文件）",
+      "permission": "file.read",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "文件路径",
+          "required": true
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "description": "文件编码",
+          "required": false,
+          "default": "utf-8"
+        },
+        {
+          "name": "max_lines",
+          "type": "number",
+          "description": "最大读取行数（0 表示全部）",
+          "required": false,
+          "default": 100
+        }
+      ]
+    },
+    {
+      "name": "search_files",
+      "description": "在指定目录中搜索文件",
+      "permission": "file.read",
+      "parameters": [
+        {
+          "name": "pattern",
+          "type": "string",
+          "description": "搜索模式（支持 * 和 ? 通配符）",
+          "required": true
+        },
+        {
+          "name": "directory",
+          "type": "string",
+          "description": "搜索目录",
+          "required": false,
+          "default": "."
+        },
+        {
+          "name": "recursive",
+          "type": "boolean",
+          "description": "是否递归搜索子目录",
+          "required": false,
+          "default": true
+        },
+        {
+          "name": "max_results",
+          "type": "number",
+          "description": "最大结果数",
+          "required": false,
+          "default": 50
+        }
+      ]
+    }
+  ]
+}

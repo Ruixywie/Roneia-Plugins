@@ -1,0 +1,46 @@
+{
+  "index_version": "1.0.0",
+  "updated_at": "2026-03-10T00:00:00Z",
+  "plugins": [
+    {
+      "id": "local_file",
+      "path": "skills/local_file",
+      "plugin_type": "skill",
+      "skill_type": "code",
+      "source": "official",
+      "author": "Ruixywie"
+    },
+    {
+      "id": "web_search",
+      "path": "skills/web_search",
+      "plugin_type": "skill",
+      "skill_type": "code",
+      "source": "official",
+      "author": "Ruixywie"
+    },
+    {
+      "id": "screen_capture",
+      "path": "skills/screen_capture",
+      "plugin_type": "skill",
+      "skill_type": "code",
+      "source": "official",
+      "author": "Ruixywie"
+    },
+    {
+      "id": "weather",
+      "path": "skills/weather",
+      "plugin_type": "skill",
+      "skill_type": "api",
+      "source": "official",
+      "author": "Ruixywie"
+    },
+    {
+      "id": "voice",
+      "path": "components/voice",
+      "plugin_type": "component",
+      "skill_type": "code",
+      "source": "official",
+      "author": "Ruixywie"
+    }
+  ]
+}
