@@ -1,46 +1,90 @@
 {
-  "index_version": "1.0.0",
-  "updated_at": "2026-03-10T00:00:00Z",
+  "index_version": "2.0.0",
+  "updated_at": "2026-03-11T00:00:00Z",
   "plugins": [
     {
-      "id": "local_file",
-      "path": "skills/local_file",
-      "plugin_type": "skill",
-      "skill_type": "code",
+      "id": "web_search_tavily",
+      "path": "skills/web_search_tavily",
+      "title": "Tavily 网络搜索",
+      "description": "使用 Tavily API 搜索互联网，获取最新信息和网页内容摘要",
+      "icon": "🔍",
+      "version": "1.0.0",
+      "skill_type": "api",
+      "execution": "server",
+      "tags": ["search", "web", "tavily"],
       "source": "official",
-      "author": "Ruixywie"
+      "author": "Ruixywie",
+      "requires_env": ["TAVILY_API_KEY"]
     },
     {
-      "id": "web_search",
-      "path": "skills/web_search",
-      "plugin_type": "skill",
+      "id": "web_search_ddg",
+      "path": "skills/web_search_ddg",
+      "title": "DuckDuckGo 搜索",
+      "description": "使用 DuckDuckGo 搜索互联网，无需 API Key，完全免费",
+      "icon": "🦆",
+      "version": "1.0.0",
       "skill_type": "code",
+      "execution": "server",
+      "tags": ["search", "web", "free"],
       "source": "official",
-      "author": "Ruixywie"
-    },
-    {
-      "id": "screen_capture",
-      "path": "skills/screen_capture",
-      "plugin_type": "skill",
-      "skill_type": "code",
-      "source": "official",
-      "author": "Ruixywie"
+      "author": "Ruixywie",
+      "requires_env": []
     },
     {
       "id": "weather",
       "path": "skills/weather",
-      "plugin_type": "skill",
+      "title": "天气查询",
+      "description": "使用 OpenWeather API 查询全球城市的实时天气信息",
+      "icon": "🌤️",
+      "version": "1.0.0",
       "skill_type": "api",
+      "execution": "server",
+      "tags": ["weather", "utility"],
       "source": "official",
-      "author": "Ruixywie"
+      "author": "Ruixywie",
+      "requires_env": ["OPENWEATHER_API_KEY"]
     },
     {
-      "id": "voice",
-      "path": "components/voice",
-      "plugin_type": "component",
+      "id": "url_reader",
+      "path": "skills/url_reader",
+      "title": "网页阅读器",
+      "description": "读取网页内容并提取纯文本，支持限制返回长度",
+      "icon": "📄",
+      "version": "1.0.0",
       "skill_type": "code",
+      "execution": "server",
+      "tags": ["web", "reader", "utility"],
       "source": "official",
-      "author": "Ruixywie"
+      "author": "Ruixywie",
+      "requires_env": []
+    },
+    {
+      "id": "calculator",
+      "path": "skills/calculator",
+      "title": "计算器",
+      "description": "安全地计算数学表达式，支持基本运算和常见数学函数",
+      "icon": "🧮",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "server",
+      "tags": ["math", "calculator", "utility"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
+    },
+    {
+      "id": "time_date",
+      "path": "skills/time_date",
+      "title": "时间日期",
+      "description": "获取当前日期和时间，支持不同时区",
+      "icon": "🕐",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "server",
+      "tags": ["time", "date", "utility"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
     }
   ]
 }
