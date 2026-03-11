@@ -85,6 +85,76 @@
       "source": "official",
       "author": "Ruixywie",
       "requires_env": []
+    },
+    {
+      "id": "filesystem",
+      "path": "skills/filesystem",
+      "title": "文件管理",
+      "description": "读写文件、浏览目录、搜索文件和用默认程序打开文件",
+      "icon": "📁",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "local_agent",
+      "tags": ["file", "filesystem", "system", "local"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
+    },
+    {
+      "id": "screenshot",
+      "path": "skills/screenshot",
+      "title": "屏幕截图与识别",
+      "description": "截取用户屏幕画面并支持 AI 视觉理解分析",
+      "icon": "📸",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "local_agent",
+      "tags": ["screenshot", "screen", "vision", "system", "local"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
+    },
+    {
+      "id": "clipboard",
+      "path": "skills/clipboard",
+      "title": "剪贴板",
+      "description": "读取和写入系统剪贴板内容",
+      "icon": "📋",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "local_agent",
+      "tags": ["clipboard", "system", "local"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
+    },
+    {
+      "id": "shell",
+      "path": "skills/shell",
+      "title": "Shell 命令",
+      "description": "在用户本地机器上执行 Shell 命令（需要用户确认）",
+      "icon": "💻",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "local_agent",
+      "tags": ["shell", "command", "terminal", "system", "local"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
+    },
+    {
+      "id": "app_monitor",
+      "path": "skills/app_monitor",
+      "title": "应用窗口监控",
+      "description": "检测当前活动的应用窗口标题",
+      "icon": "🪟",
+      "version": "1.0.0",
+      "skill_type": "code",
+      "execution": "local_agent",
+      "tags": ["window", "application", "monitor", "system", "local"],
+      "source": "official",
+      "author": "Ruixywie",
+      "requires_env": []
     }
   ]
 }
