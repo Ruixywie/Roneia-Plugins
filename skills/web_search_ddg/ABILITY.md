@@ -7,8 +7,6 @@ icon: "🦆"
 category: search
 author: Ruixywie
 tags: [search, web, free]
-skill_type: code
-execution: server
 permissions: [network]
 source: official
 tools:

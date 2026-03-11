@@ -7,8 +7,6 @@ icon: "🕐"
 category: utility
 author: Ruixywie
 tags: [time, date, utility]
-skill_type: code
-execution: server
 permissions: []
 source: official
 tools:

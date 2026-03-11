@@ -7,8 +7,6 @@ icon: "📄"
 category: utility
 author: Ruixywie
 tags: [web, reader, utility]
-skill_type: code
-execution: server
 permissions: [network]
 source: official
 tools:

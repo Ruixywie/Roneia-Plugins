@@ -7,17 +7,15 @@ icon: "🌤️"
 category: utility
 author: Ruixywie
 tags: [weather, utility]
-skill_type: api
-execution: server
 permissions: [network]
 source: official
-base_url: https://api.openweathermap.org/data/2.5
-auth:
-  type: query_param
-  param_name: appid
-  env_key: OPENWEATHER_API_KEY
-requires:
-  env: [OPENWEATHER_API_KEY]
+requires_env: [OPENWEATHER_API_KEY]
+api:
+  base_url: https://api.openweathermap.org/data/2.5
+  auth:
+    type: query_param
+    param_name: appid
+    env_key: OPENWEATHER_API_KEY
 tools:
   - name: get_weather
     description: 查询指定城市的当前天气

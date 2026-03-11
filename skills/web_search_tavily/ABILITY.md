@@ -7,17 +7,15 @@ icon: "🔍"
 category: search
 author: Ruixywie
 tags: [search, web, tavily]
-skill_type: api
-execution: server
 permissions: [network]
 source: official
-base_url: https://api.tavily.com
-auth:
-  type: body_param
-  param_name: api_key
-  env_key: TAVILY_API_KEY
-requires:
-  env: [TAVILY_API_KEY]
+requires_env: [TAVILY_API_KEY]
+api:
+  base_url: https://api.tavily.com
+  auth:
+    type: body_param
+    param_name: api_key
+    env_key: TAVILY_API_KEY
 tools:
   - name: search
     description: 搜索互联网获取最新信息

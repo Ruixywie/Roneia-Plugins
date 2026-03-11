@@ -7,8 +7,6 @@ icon: "🧮"
 category: utility
 author: Ruixywie
 tags: [math, calculator, utility]
-skill_type: code
-execution: server
 permissions: []
 source: official
 tools:
